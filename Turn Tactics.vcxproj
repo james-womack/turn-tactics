@@ -21,6 +21,34 @@
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Math\Collision.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Math\Common.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Render\Particles.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Render\SpriteSheet.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Render\Texture.h" />
+    <ClInclude Include="Src\Util\Logger.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Util\MemoryPool.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{96F706BE-FA63-49D3-A0D3-E298CF8C2369}</ProjectGuid>
