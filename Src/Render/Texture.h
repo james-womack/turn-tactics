@@ -33,20 +33,11 @@ Author: James Womack
 #include <SDL.h>
 #include <SDL_image.h>
 
-namespace lse
-{
-  enum class TextureFileType : Int8
-  {
-    Undefined,
-    BMP,
-    JPG,
-    PNG,
-    TGA,
-    TIF
-  };
-
-  class Texture
-  {
-    
-  };
-}
+class GameTexture {
+public:
+	GameTexture();
+	~GameTexture();
+	bool load_from_file();
+private:
+	SDL_Texture* texture;
+};

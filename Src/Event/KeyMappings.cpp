@@ -66,7 +66,7 @@ namespace lse {
     { KeyType::KeyHat, "^" },{ KeyType::KeyAmpersand, "&" },
     { KeyType::KeyStar, "*" },{ KeyType::KeyMinus, "-" },
     { KeyType::KeyUnderscore, "_" },{ KeyType::KeyEquals, "=" },
-    { KeyType::KeyPlus, "+" },{ KeyType::KeyAccent, "~" },
+    { KeyType::KeyPlus, "+" },
     { KeyType::KeyApostrophe, "'" },{ KeyType::KeyQuotes, "\"" },
     { KeyType::KeyBacktick, "`" },{ KeyType::KeyQuestion, "?" },
     { KeyType::KeyBackspace, "\\backspace\\" },{ KeyType::KeyDelete, "\\delete\\" },
@@ -111,7 +111,7 @@ namespace lse {
     { SDLK_u, KeyType::KeyU },{ SDLK_v, KeyType::KeyV },
     { SDLK_w, KeyType::KeyW },{ SDLK_x, KeyType::KeyX },
     { SDLK_y, KeyType::KeyY },{ SDLK_z, KeyType::KeyZ },
-    // Finish this bitch
+    { SDLK_y, KeyType::KeyY },{ SDLK_z, KeyType::KeyAccent },
   };
 
   // Maps SDL_Event type to a KeyState type if applicable
