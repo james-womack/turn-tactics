@@ -19,10 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Event\KeyMappings.cpp" />
     <ClCompile Include="Src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Event\EventManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Src\Event\KeyMappings.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Src\Math\Collision.h">
       <SubType>
       </SubType>
