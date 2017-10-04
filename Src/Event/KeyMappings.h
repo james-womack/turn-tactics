@@ -109,6 +109,7 @@ namespace lse
     KeyQuotes,
     KeyColon,
     KeyBacktick,
+    KeyAccent,
     KeyExclamation,
     KeyAt,
     KeyHash,
