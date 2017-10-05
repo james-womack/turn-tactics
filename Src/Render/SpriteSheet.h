@@ -29,4 +29,17 @@ Author: James Womack
 ********************************************************************************/
 #pragma once
 
+#include <SDL_image.h>
+#include <string>
+#include "Texture.h"
 #include "../Common.h"
+
+
+class SpriteSheet {
+private:
+	Texture * texture;
+
+public:
+	SpriteSheet(std::string path);
+
+};
