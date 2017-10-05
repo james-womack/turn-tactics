@@ -33,6 +33,11 @@ Author: James Womack
 #include <SDL.h>
 #include <SDL_image.h>
 
-
-
-#endif
+class GameTexture {
+public:
+	GameTexture();
+	~GameTexture();
+	bool load_from_file();
+private:
+	SDL_Texture* texture;
+};
