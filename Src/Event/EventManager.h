@@ -1,6 +1,6 @@
 /******************************************************************************
-File: Common.h
-Created: 10/1/2017 8:27:28 PM
+File: EventManager.h
+Created: 10/3/2017 11:13:57 AM
 Copyright (c) 2017 Turn Tactics
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,45 +21,27 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Purpose: Holds common type defs for geometric and mathmatical types along with base operations
+Purpose: This contains the methods for handling events in the game engine
+         and facilitates the operation of event callbacks, event queues and
+         registering new event types along with raising events.
 
 Author: James Womack
 
 ********************************************************************************/
 #pragma once
 
-#include <array>
-#include <type_traits>
 #include "../Common.h"
+#include <string>
 
-// Typedefs for Point, Size and Vector types
-using Point2D = std::array<Int32, 2>;
-using Point3D = std::array<Int32, 3>;
-using Size2D = std::array<Int32, 2>;
-using Size3D = std::array<Int32, 3>;
-using Vector2D = std::array<Float32, 2>;
-using Vector3D = std::array<Float32, 3>;
-
-struct Rectange
+namespace lse
 {
-  Size2D extents;
-  Point2D location; // Location is upper-left corner of extents
-};
+  class EventManager
+  {
+  private:
 
-struct Box // 3-D rectangular volume
-{
-  Size3D extents;
-  Point3D location;
-};
+  };
 
-struct Ellipse
-{
-  Size2D radii;
-  Point2D location; // This is the upper-left corner of bounding rectangle around ellipse
-};
-
-struct Sphere
-{
-  Size2D radii;
-  Point3D location; // Upper-left corner of bounding box around sphere
-};
+  // Polls the events that SDL generates such as key presses and raises them in the
+  // given EventManager
+  void poll_sdl_events(EventManager*);
+}
